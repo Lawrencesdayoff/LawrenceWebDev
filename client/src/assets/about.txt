@@ -1,0 +1,11 @@
+<h2>Lawrence Carroll</h2>
+<p>Full-Stack Engineer. Game Dev. Interdisciplinary Artist.</p>
+<p>Hailing from Moreno Valley, California.</p>
+@
+<h2>Computing Arts</h2>
+<p>Its fun.</p>
+@
+<h2>Education</h2>
+<p>UCSD</p>
+<p>Bachelors in Philosophy</p>
+@
