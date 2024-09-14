@@ -1,0 +1,75 @@
+{
+	"frames": {
+		"nodding0.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 1364,
+				"h": 1810
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1364,
+				"h": 1810
+			},
+			"sourceSize": {
+				"w": 1364,
+				"h": 1810
+			}
+		},
+		"nodding1.png": {
+			"frame": {
+				"x": 1367,
+				"y": 1,
+				"w": 1364,
+				"h": 1810
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1364,
+				"h": 1810
+			},
+			"sourceSize": {
+				"w": 1364,
+				"h": 1810
+			}
+		},
+		"smiling.png": {
+			"frame": {
+				"x": 1,
+				"y": 1813,
+				"w": 1364,
+				"h": 1810
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1364,
+				"h": 1810
+			},
+			"sourceSize": {
+				"w": 1364,
+				"h": 1810
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 2732,
+			"h": 3624
+		},
+		"scale": "1"
+	}
+}
