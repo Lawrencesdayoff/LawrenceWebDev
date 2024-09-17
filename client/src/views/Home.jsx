@@ -26,6 +26,7 @@ const Home = () => {
     return(
         <>
         <div>
+            <img src = "/src/assets/smiling.png" height= "100px" width="100px" ></img>
             <h1>Lawrence Carroll</h1>
             <img src="src/assets/github.png" height= "50px" width="50px"/>
             <a href ="https://github.com/Lawrencesdayoff" target = "_blank" > My Github </a>
