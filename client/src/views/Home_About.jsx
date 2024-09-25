@@ -9,6 +9,11 @@ const Home_About = () => {
             <p> I finished training as a fullstack software developer in 2024, certified by Colorado Technical University.</p>
             <p> Currently looking for work as a software developer.</p>
 
+            <li>Some hobbies of mine include:</li>
+            <ul>Strength training</ul>
+            <ul>Grappling</ul>
+            <ul>Community organizing</ul>
+
             
         </div>
 

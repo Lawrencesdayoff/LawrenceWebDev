@@ -25,23 +25,20 @@ const Home = () => {
     }
     return(
         <>
-        <div>
-            <img src = "/src/assets/smiling.png" height= "100px" width="100px" ></img>
-            <h1>Lawrence Carroll</h1>
-            <img src="src/assets/github.png" height= "50px" width="50px"/>
-            <a href ="https://github.com/Lawrencesdayoff" target = "_blank" > My Github </a>
-
+        <div className = "banner">
+            <img src = "/src/assets/WebBanner.png" width = "100%" ></img>
         </div>
-
+        <div className="page">
         <div class ="navbar" onWheel = {(e) => navScroll(e)}>
             <a class = "navitem" href="#about" onClick = {(e) => navClick(0)} > About </a>
             <a class = "navitem" href="#softwaredev" onClick = {(e) => navClick(1)}> Software Development </a>
             <a class = "navitem" href="#gamedev" onClick = {(e) => navClick(2)}> Game Development </a>
             <a class = "navitem" href="#contactme" onClick = {(e) => navClick(3)}> Contact</a>
         </div>
-        <div>
+        <div className="content">
             {navText[navitem]}
    
+        </div>
         </div>
         </>
     )
