@@ -41,6 +41,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding:10px
 }
 
 .card {
@@ -55,10 +56,6 @@
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: #ffffff;
-}
-
-.read-the-docs {
-  color: #888;  
 }
 
 
@@ -83,7 +80,13 @@
   background-color: white;
   
 }
+.contact_me_form{
+  border: 1px solid black;
+  border-radius: 10%;;
+  padding: 10px;
 
+
+}
 .contact_me{
   box-sizing: border-box;
   display: flex;
@@ -105,7 +108,26 @@
 }
 .contact_me_input{
   width: 50%;
+  color: black;
   background-color: #ffffff;
+}
+.contact_me_textarea{
+  
+  color: black;
+  background-color: #ffffff;
+}
+
+.contact_me_button{
+  background-color: white;
+  border: 2px solid black;
+  font-size: larger;
+  color: black;
+}
+.contact_me_button:hover {
+  background-color: black;
+  border: 2px solid black;
+  font-size: larger;
+  color: white;
 }
 .banner{
   width:100%;
@@ -119,4 +141,8 @@
   font-weight: bolder;
   font-style: italic;
   color: blue;
+}
+
+.softwaredevelopment{
+  background-color: white;
 }

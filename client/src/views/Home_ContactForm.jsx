@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
 
@@ -6,36 +7,34 @@ const ContactForm = () => {
     const [senderemail, setSenderEmail] = useState("")
     const [sendermessage, setSenderMessage] = useState("")
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [stateMessage, setStateMessage] = useState(null);  const sendEmail = (e) => {
-      e.persist();
+    const [stateMessage, setStateMessage] = useState(null); 
+    const SERVICE_ID = "service_06sb3c5";
+    const TEMPLATE_ID = "template_5n6lmxq";
+    const PUBLIC_KEY = "9r3irmNNYz6K1_ZTP";
+    const sendEmail = (e) => {
       e.preventDefault();
-      setIsSubmitting(true);    emailjs
-        .sendForm(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
-          e.target,
-          process.env.REACT_APP_PUBLIC_KEY
-        )
-        .then(
-          (result) => {
-            setStateMessage('Message sent!');
-            setIsSubmitting(false);
-            setTimeout(() => {
-              setStateMessage(null);
-            }, 5000); // hide message after 5 seconds
-          },
-          (error) => {
-            setStateMessage('Something went wrong, please try again later');
-            setIsSubmitting(false);
-            setTimeout(() => {
-              setStateMessage(null);
-            }, 5000); // hide message after 5 seconds
-          }
-        );
+
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+        .then((result) => {
+          console.log(result.text);
+          setStateMessage('Message Sent Successfully')
+        }, (error) => {
+          console.log(error.text);
+          setStateMessage('Something went wrong!')
+        });
+      e.target.reset()
+    };
       
-      // Clears the form after sending the email
-      e.target.reset();
-    };  return (
+    const handleName = (e) => {
+      setSenderName(e)
+    }
+    const handleMessage = (e) => {
+      setSenderMessage(e)
+    }
+    const handleEmail = (e) => {
+      setSenderEmail(e)
+    }
+      return (
       <>
 
 
@@ -44,24 +43,26 @@ const ContactForm = () => {
       <p>
         Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment oppurtunities? Please....
       </p>
-      <form onSubmit={sendEmail}>
-        <div className="contact_me_item"> 
-          
-          <label  className='contact_me_label'>Name</label>
-          <input type="text" name="user_name" className='contact_me_input' />
-          
+        <div className = "contact_me_form">
+          <form onSubmit={sendEmail}>
+            <div className="contact_me_item"> 
+              
+              <label  className='contact_me_label'>Name</label>
+              <input type="text" name="from_name" className='contact_me_input' value={sendername} onChange ={(e) => handleName(e.target.value)}/>
+              
+            </div>
+            <div>
+              <label className="contact_me_label">Email</label>
+              <input type="email" name="from_email" className='contact_me_input' value={senderemail} onChange ={(e) => handleEmail(e.target.value)}/>
+            </div> 
+            <div>  
+              <label  className='contact_me_label'>Message</label>
+              <textarea name="message" className="contact_me_textarea"value= {sendermessage} onChange ={(e) => handleMessage(e.target.value)}/>
+            </div>
+            <input type="submit" className="contact_me_button" value="Send" disabled={isSubmitting} />
+            {stateMessage && <p>{stateMessage}</p>}
+          </form> 
         </div>
-        <div>
-          <label className="contact_me_label">Email</label>
-          <input type="email" name="user_email" className='contact_me_input'/>
-        </div> 
-        <div>  
-          <label  className='contact_me_label'>Message</label>
-          <textarea name="message" />
-        </div>
-        <input type="submit" value="Send" disabled={isSubmitting} />
-        {stateMessage && <p>{stateMessage}</p>}
-      </form>
       </div>
       </>
     );
