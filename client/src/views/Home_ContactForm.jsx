@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { Dating_Sim } from './Dating_Sim';
 
 const ContactForm = () => {
 
@@ -43,6 +44,7 @@ const ContactForm = () => {
       <p>
         Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment oppurtunities? Please....
       </p>
+      <div> <Dating_Sim/></div>
         <div className = "contact_me_form">
           <form onSubmit={sendEmail}>
             <div className="contact_me_item"> 

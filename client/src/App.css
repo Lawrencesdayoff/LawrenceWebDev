@@ -78,12 +78,15 @@
 .home_about{
   overflow: auto;
   background-color: white;
+  padding: 10px;
+  margin: 10px;
   
 }
 .contact_me_form{
   border: 1px solid black;
   border-radius: 10%;;
   padding: 10px;
+  margin: 10px;
 
 
 }
