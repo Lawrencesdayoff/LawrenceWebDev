@@ -13,7 +13,7 @@ export const Dating_Sim = () =>
     g.clear();
     g.lineStyle(2, 0xff00ff, 1);
     g.beginFill(0xff00bb, 0.25);
-    g.drawRect(50, 25, 700, 100, 15);
+    g.drawRect(10, 400, 200, 100);
     g.endFill();
     g.endFill();
   }, []);
@@ -37,9 +37,10 @@ export const Dating_Sim = () =>
 
   return (
 
-    <Stage options={{ background: 0xffffff }}>
+    <Stage width ={250} height= {500} options={{ background: 0xffffff }}>
         <AnimatedSprite
-        anchor={{ x: 0.4, y: 0.0 }}
+        anchor={{ x: 0.45, y: 0.0 }}
+        scale = {0.5}
         images={noddingLaw}
         isPlaying={true}
         initialFrame={0}
@@ -56,8 +57,11 @@ export const Dating_Sim = () =>
         anchor={{ x: 0.4, y: 0.4 }}
       /> */}
       <Graphics draw = {draw} />
-        <Text text="Let's Chat Now?" anchor={{ x: - 1, y: -1.5 }} />
-        <Text style={style} x={400} y={180} text="Hot Single Software Developers in your Area!" />
+        <Text style={style} x={0} y={180} text="Hot Single" />
+        <Text style={style} x={0} y={220} text="Software Devs" />
+        <Text style={style} x={0} y={260} text="in your Area!" />
+        <Text style={style} x={0} y={400} text="Let's" />
+        <Text style={style} x={0} y={440} text="Chat!!" />
     </Stage>
   );
 };

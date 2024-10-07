@@ -33,8 +33,7 @@
 }
 
 .page{
-  display: flex;
-  flex-direction: row;
+  
 }
 
 .Project_List{
@@ -61,8 +60,7 @@
 
 .navbar {
   background-color: #ffffff ;
-  width: 20%;
-  flex-direction: column;
+  width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
@@ -81,6 +79,10 @@
   padding: 10px;
   margin: 10px;
   
+}
+.contact_me_body{
+  display: flex;
+  flex-direction: row;
 }
 .contact_me_form{
   border: 1px solid black;
@@ -137,7 +139,10 @@
 }
 
 .content{
-  width: 80%;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
 }
 
 .project_link{

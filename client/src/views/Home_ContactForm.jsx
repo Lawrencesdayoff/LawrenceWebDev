@@ -44,6 +44,7 @@ const ContactForm = () => {
       <p>
         Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment oppurtunities? Please....
       </p>
+      <div className="contact_me_body">
       <div> <Dating_Sim/></div>
         <div className = "contact_me_form">
           <form onSubmit={sendEmail}>
@@ -63,7 +64,10 @@ const ContactForm = () => {
             </div>
             <input type="submit" className="contact_me_button" value="Send" disabled={isSubmitting} />
             {stateMessage && <p>{stateMessage}</p>}
-          </form> 
+          </form>           
+        </div>
+        <div> <Dating_Sim/></div>
+
         </div>
       </div>
       </>
