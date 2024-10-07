@@ -26,7 +26,7 @@ const Home = () => {
     return(
         <>
         <div className = "banner">
-            <img src = "/src/assets/WebBanner.png" width = "100%" ></img>
+            <img src = "/public/assets/WebBanner.png" width = "100%" ></img>
         </div>
         <div className="page">
         <div class ="navbar" onWheel = {(e) => navScroll(e)}>

@@ -7,8 +7,8 @@ import Button from '../components/Button';
 
 export const Dating_Sim = () =>
 {
-  const noddingLaw = ["/src/assets/nodding0.png", "/src/assets/smiling.png" ,"/src/assets/nodding1.png"]
-  const talkingLaw = ["/src/assets/smiling.png", "src/assets/talking.png"]
+  const noddingLaw = ["/public/assets/nodding0.png", "/public/assets/smiling.png" ,"/public/assets/nodding1.png"]
+  const talkingLaw = ["/public/assets/smiling.png", "public/assets/talking.png"]
   const draw = useCallback((g) => {
     g.clear();
     g.lineStyle(2, 0xff00ff, 1);
