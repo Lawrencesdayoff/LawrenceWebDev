@@ -2,12 +2,13 @@ import React from "react";
 import {useState, useEffect} from "react"
 import Home_About from "./Home_About";
 import Home_SoftDev from "./Home_SoftDev";
+import Home_Game_Dev from "./Home_Game_Dev"
 import ContactForm from "./Home_ContactForm";
 import { Dating_Sim } from "./Dating_Sim";
 
 const Home = () => {
     const [navitem, setNavigation] = useState(0)
-    const navText= [<Home_About />, <Home_SoftDev />, <Dating_Sim/>, <ContactForm />]
+    const navText= [<Home_About />, <Home_SoftDev />, <Home_Game_Dev/>, <ContactForm />]
     const navScroll = (target) => {
         if(target.deltaY < 0){
         setNavigation((navitem + 1) % navText.length )
@@ -26,7 +27,7 @@ const Home = () => {
     return(
         <>
         <div className = "banner">
-            <img src = "/public/assets/WebBanner.png" width = "100%" ></img>
+            <img src = "/assets/WebBanner.png" width = "100%" ></img>
         </div>
         <div className="page">
         <div class ="navbar" onWheel = {(e) => navScroll(e)}>
