@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Dating_Sim } from './Dating_Sim';
+import Lawrence_Talking from './Lawrence_Talking';
 
 const ContactForm = () => {
 
@@ -42,7 +43,7 @@ const ContactForm = () => {
     <div className="contact_me">
       <h1>Hit me up!</h1>
       <p>
-        Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment oppurtunities? Please....
+        Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment opportunities? Please....
       </p>
       <div className="contact_me_body">
       <div> <Dating_Sim/></div>
@@ -66,7 +67,7 @@ const ContactForm = () => {
             {stateMessage && <p>{stateMessage}</p>}
           </form>           
         </div>
-        <div> <Dating_Sim/></div>
+        <div> <Lawrence_Talking/></div>
 
         </div>
       </div>
