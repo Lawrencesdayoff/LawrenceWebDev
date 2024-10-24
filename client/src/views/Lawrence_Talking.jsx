@@ -5,7 +5,6 @@ import '@pixi/events';
 import { useMemo, useCallback} from 'react';
 import Button from '../components/Button';
 import { useState } from 'react';
-import { el } from '@faker-js/faker';
 
 const Lawrence_Talking = () => {
     
