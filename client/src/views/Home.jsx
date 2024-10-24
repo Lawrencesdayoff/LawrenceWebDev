@@ -10,10 +10,10 @@ const Home = () => {
     const [navitem, setNavigation] = useState(0)
     const navText= [<Home_About />, <Home_SoftDev />, <Home_Game_Dev/>, <ContactForm />]
     const navScroll = (target) => {
-        if(target.deltaY < 0){
+        if(target.deltaX < 0){
         setNavigation((navitem + 1) % navText.length )
         }
-        else if(target.deltaY > 0){
+        else if(target.deltaX > 0){
             const newNavText = (Math.abs((navitem - 1 + navText.length)% navText.length))
             setNavigation( newNavText) 
         }

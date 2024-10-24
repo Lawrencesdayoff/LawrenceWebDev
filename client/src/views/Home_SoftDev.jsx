@@ -4,7 +4,7 @@ const Home_SoftDev = () => {
         <div className = "HomeBanner">
         </div>
         <div className="softwaredevelopment">
-        <img src="public/assets/github.png" height= "50px" width="50px"/>
+        <img src="/assets/github.png" height= "50px" width="50px"/>
         <a href ="https://github.com/Lawrencesdayoff" target = "_blank" > My Github </a>
             <p> Here are some technologies I use on a regular basis in my programming:</p>
             <div>
