@@ -54,7 +54,7 @@
   overflow: auto;
   background-color: white;
 }
-.profile-image{
+.profile_image{
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -63,7 +63,7 @@
 }
 .home_about_text{
   display: flex;
-  margin-left: 30%;
+  margin-left: 20%;
   margin-right: 20%;
   gap: 10px;
   justify-content: space-around;
@@ -158,8 +158,6 @@
 }
 
 .nightModeButton{
-  position: absolute;
-  margin-left: 95%;
 }
 .switch {
   position: relative;

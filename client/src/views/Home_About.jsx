@@ -7,7 +7,7 @@ const Home_About = () => {
         <div className = "home_about">
             <div className = "home_about_text">
                 <div className= "home_about_text_para1" >
-                <img src = "./public/assets/LawrencePicture.png" className= "profile-image"/>
+                <img src = "./assets/LawrencePicture.png" className= "profile_image"/>
                     <div>
                         <p>My name is Lawrence Carroll, I am a fullstack software developer, an artist, and an organizer. I am currently looking for employment or internship oppurtunities that would enable me to earn money as a programmer, so that I can sharpen my skills as I earn a living.</p>            
                         <p>I was born and raised in the Inland Empire in Southern California where I currently to this day still reside.</p>
@@ -23,7 +23,8 @@ const Home_About = () => {
             <ul>Some hobbies of mine include:        
             <li> Strength training</li>
             <li> Grappling</li>
-            <li> Community organizing</li>
+            <li> Organizing </li>
+            <li> Electronic art </li>
             </ul>
             </div>
             <div className = "dancinglaw">
