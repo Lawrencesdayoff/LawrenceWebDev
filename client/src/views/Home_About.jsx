@@ -1,13 +1,17 @@
+import Dancing_Law from "./Dancing_Law";
+
 const Home_About = () => {
     return(
         <>
         
-        <div class = "home_about">
-            
-            <div class = "home_about_text">
-                <div>
-                    <p>My name is Lawrence Carroll, I am a fullstack software developer, an artist, and an organizer. I am currently looking for any oppurtunity to allow myself to earn money as a programmer, so that I can sharpen my skills as I earn a living.</p>            
-                    <p>I was born and raised in the Inland Empire in Southern California.</p>
+        <div className = "home_about">
+            <div className = "home_about_text">
+                <div className= "home_about_text_para1" >
+                <img src = "./public/assets/LawrencePicture.png" className= "profile-image"/>
+                    <div>
+                        <p>My name is Lawrence Carroll, I am a fullstack software developer, an artist, and an organizer. I am currently looking for employment or internship oppurtunities that would enable me to earn money as a programmer, so that I can sharpen my skills as I earn a living.</p>            
+                        <p>I was born and raised in the Inland Empire in Southern California where I currently to this day still reside.</p>
+                    </div>
                 </div>
                 <div>
                     <p> I studied Philosophy and Interdisciplinary Computing Arts at the University of California San Diego, graduating in 2021.</p>
@@ -22,9 +26,10 @@ const Home_About = () => {
             <li> Community organizing</li>
             </ul>
             </div>
-            
+            <div className = "dancinglaw">
         </div>
-
+        </div>
+    
         </>
     )
 }

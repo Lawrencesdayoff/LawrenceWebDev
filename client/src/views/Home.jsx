@@ -27,8 +27,15 @@ const Home = () => {
     return(
         <>
         <div className = "banner">
+            <div className ="nightModeButton"> 
+            <label className="switch">
+                <input type="checkbox"/>
+                <span className="slider"></span>
+            </label>
+            </div>
             <img src = "/assets/WebBanner.png" width = "100%" ></img>
         </div>
+            
         <div className="page">
         <div class ="navbar" onWheel = {(e) => navScroll(e)}>
             <a class = "navitem" href="#about" onClick = {(e) => navClick(0)} > About </a>
