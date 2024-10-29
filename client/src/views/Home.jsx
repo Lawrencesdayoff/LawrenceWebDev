@@ -12,7 +12,7 @@ const Home = () => {
     const [nightmode, setNightMode] = useState(false)
     const [spanishmode, setSpanishMode] = useState(false)
     const [navitem, setNavigation] = useState(0)
-    const navText= [<Home_About />, <Home_SoftDev />, <Home_Game_Dev/>, <ContactForm />]
+    const navText= [<Home_About />, <Home_SoftDev />, <ContactForm />]
     
     const navScroll = (target) => {
         if(target.deltaX < 0){
@@ -60,8 +60,7 @@ const Home = () => {
         <div className ="navbar" onWheel = {(e) => navScroll(e)}>
             <a className = "navitem" href="#about" onClick = {(e) => navClick(0)} > About </a>
             <a className = "navitem" href="#softwaredev" onClick = {(e) => navClick(1)}> Software Development </a>
-            <a className = "navitem" href="#gamedev" onClick = {(e) => navClick(2)}> Game Development </a>
-            <a className = "navitem" href="#contactme" onClick = {(e) => navClick(3)}> Contact</a>
+            <a className = "navitem" href="#contactme" onClick = {(e) => navClick(2)}> Contact</a>
             <div className ="navitem"> 
             
                 <div className ="nightModeButton"> 
