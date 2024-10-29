@@ -5,10 +5,12 @@ import Home_SoftDev from "./Home_SoftDev";
 import Home_Game_Dev from "./Home_Game_Dev"
 import ContactForm from "./Home_ContactForm";
 import { Dating_Sim } from "./Dating_Sim";
+// import { useEffect } from "react";
 
 const Home = () => {
     
     const [nightmode, setNightMode] = useState(false)
+    const [spanishmode, setSpanishMode] = useState(false)
     const [navitem, setNavigation] = useState(0)
     const navText= [<Home_About />, <Home_SoftDev />, <Home_Game_Dev/>, <ContactForm />]
     
@@ -29,13 +31,16 @@ const Home = () => {
     }
 
     const toggleNightMode = (value) => {
+        
         console.log("nightmode toggled")
         if (value == true){
             setNightMode(false)
+            document.body.style.backgroundImage = "url('/assets/51196069.jpeg')"
             console.log("Night mode on")
         }
         else if (value == false){
             setNightMode(true)
+            document.body.style.backgroundImage = "url('/assets/NightmodeWallpaper.png')"
             console.log("Night mode off")
         }
     }
@@ -43,8 +48,12 @@ const Home = () => {
     return(
         <>
         <div className = "banner">
-    
-            <img src = "/assets/WebBanner.png" width = "100%" ></img>
+        {nightmode == false?  
+            <img src = "/assets/DaymodeBanner.png" width = "100%" ></img>:  
+            <img src = "/assets/NightmodeBanner.png" width = "100%" ></img>
+        }
+           
+
         </div>
             
         <div className="page">
@@ -56,14 +65,21 @@ const Home = () => {
             <div className ="navitem"> 
             
                 <div className ="nightModeButton"> 
-                <p>Night Mode </p>
                     <label className="switch">
                         <input type="checkbox" onClick={() => toggleNightMode(nightmode)}/>
                         <span className="slider"></span>
                     </label>
                 </div>
+         
             </div>
-
+        <div className = "navitem">
+            <div className ="spanishModeButton"> 
+                    <label className="switch">
+                        <input type="checkbox" onClick={() => toggleSpanishMode(spanishmode)}/>
+                        <span className="slider"></span>
+                    </label>
+                </div>
+            </div>
         </div>
         <div className="content">
             {navText[navitem]}

@@ -4,8 +4,8 @@ const Home_SoftDev = () => {
    
         <div className="softwaredevelopment">
         <div className ="github_link">
-        <img src="/assets/github.png" height= "50px" width="50px"/>
-        <a href ="https://github.com/Lawrencesdayoff" target = "_blank" > My Github </a>
+            <img src="/assets/github.png" height= "50px" width="50px"/>
+            <a href ="https://github.com/Lawrencesdayoff" target = "_blank" > My Github </a>
         </div>
             <p>I began my journey with programming and computer science late into my college career. 
                 I didn't think I had the gusto to hack it.</p>

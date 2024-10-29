@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Dating_Sim } from './Dating_Sim';
 import Lawrence_Talking from './Lawrence_Talking';
+import Dancing_Law from './Dancing_Law';
 
 const ContactForm = () => {
 
@@ -46,7 +47,7 @@ const ContactForm = () => {
         Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment opportunities? Please....
       </p>
       <div className="contact_me_body">
-      <div> <Dating_Sim/></div>
+      <div> <Dancing_Law/> </div>
         <div className = "contact_me_form">
           <form onSubmit={sendEmail}>
             <div className="contact_me_item"> 
