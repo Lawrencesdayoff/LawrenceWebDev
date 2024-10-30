@@ -18,17 +18,13 @@ const Home_About = () => {
                     <p> I spent 2 years working in the logistics industry as a warehouse worker, operating heavy equipment like standing reach forklifts, pretty cool stuff</p>
                     <p> I finished training as a fullstack software developer in 2024, certified by Colorado Technical University.</p>
                 </div>
+                <div>
+                    <p> I spend a lot of time engaging with my local commmunity. Check out this <a href="https://www.instagram.com/lorenzotorrezclub/" target = "_blank" > trash clean-up </a> I help run.</p>
+                    <p> Some hobbies of mine include, strength training, grappling, community service and painting. </p>
+                    <p> </p>
+                </div>
             <p> Currently looking for work as a software developer.</p>
-            <br></br>
-            <ul>Some hobbies of mine include:        
-            <li> Strength training</li>
-            <li> Grappling</li>
-            <li> Organizing </li>
-            <li> Electronic art </li>
-            </ul>
             </div>
-            <div className = "dancinglaw">
-        </div>
         </div>
     
         </>
