@@ -42,10 +42,12 @@ const ContactForm = () => {
 
 
     <div className="contact_me">
+      <div className='contact_me_text'>
       <h1>Hit me up!</h1>
       <p>
         Have questions? Wanna contact me for collaborative projects, commissions; dare I say employment opportunities? Please....
       </p>
+      </div>
       <div className="contact_me_body">
       <div> <Dancing_Law/> </div>
         <div className = "contact_me_form">
@@ -56,13 +58,13 @@ const ContactForm = () => {
               <input type="text" name="from_name" className='contact_me_input' value={sendername} onChange ={(e) => handleName(e.target.value)}/>
               
             </div>
-            <div>
+            <div className="contact_me_item">
               <label className="contact_me_label">Email</label>
               <input type="email" name="from_email" className='contact_me_input' value={senderemail} onChange ={(e) => handleEmail(e.target.value)}/>
             </div> 
-            <div>  
+            <div className="contact_me_item">  
               <label  className='contact_me_label'>Message</label>
-              <textarea name="message" className="contact_me_textarea"value= {sendermessage} onChange ={(e) => handleMessage(e.target.value)}/>
+              <textarea name="message" className="contact_me_textarea" value= {sendermessage} onChange ={(e) => handleMessage(e.target.value)}/>
             </div>
             <input type="submit" className="contact_me_button" value="Send" disabled={isSubmitting} />
             {stateMessage && <p>{stateMessage}</p>}

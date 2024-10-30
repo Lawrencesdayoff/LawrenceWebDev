@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 
 }
 
@@ -89,7 +89,7 @@
   flex-direction: column;
 }
 .home_about_text p {
-  margin: 15px 0; /* Reduces spacing around paragraphs */
+  margin: 15px 0; 
 }
 .home_about_text ul {
   list-style-type: disc;
@@ -103,7 +103,20 @@
   display: flex;
   flex-direction: row;
 }
+.contact_me_text{
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  flex-direction: column;
+}
 .contact_me_form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   border: 1px solid black;
   border-radius: 10%;;
   padding: 10px;
@@ -120,13 +133,15 @@
   background-color: white;
 }
 .contact_me_item{
+  
+  flex-direction: column;
   justify-content: space-between;
 }
 .contact_me_label{
   font-size: large;
   font-weight: bolder;
   padding: 12px 12px 12px 0;
-  display: inline-block;
+  display: flex;
   
 }
 .contact_me_input{
@@ -138,6 +153,8 @@
   
   color: black;
   background-color: #ffffff;
+  width: 90%;
+  height: 250px;
 }
 
 .contact_me_button{
@@ -160,7 +177,6 @@
 .content{
   width: 100%;
   display: flex;
-
   justify-content: center;
 }
 
@@ -230,3 +246,75 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+
+
+@media (max-width: 768px) {
+  /* Make main layout column-based for small screens */
+  .home_software_dev,
+  .home_about,
+  .contact_me_body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home_about_text {
+    margin-left: 5%; /* Reduce side margins on small screens */
+    margin-right: 5%;
+  }
+
+  /* Sidebar adjustments */
+  .software_dev_sidebar {
+    width: 90%;
+    margin: 5px;
+  }
+
+  /* Project List and Card adjustments */
+  .project_list {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%; /* Full width on mobile */
+    margin: 10px 0;
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: row;
+  }
+  .navitem {
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About section adjustments */
+  .profile_image {
+    width: 150px; /* Smaller profile image on mobile */
+    height: 150px;
+  }
+
+  .home_about_text {
+    padding: 10px;
+  }
+
+  /* Contact Form adjustments */
+  .contact_me_form {
+    width: 90%;
+    padding: 5px;
+  }
+  .contact_me_input {
+    padding: 5px;
+    width: 90%;
+  }
+
+  /* Button adjustments */
+  .contact_me_button {
+    float:right;
+    border-radius: 20%;;
+    font-size: medium;
+    width: 50%;
+    padding: 5px;
+  }
+}

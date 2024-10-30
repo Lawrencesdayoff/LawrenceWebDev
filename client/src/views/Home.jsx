@@ -71,14 +71,14 @@ const Home = () => {
                 </div>
          
             </div>
-        <div className = "navitem">
+        {/* <div className = "navitem">
             <div className ="spanishModeButton"> 
                     <label className="switch">
                         <input type="checkbox" onClick={() => toggleSpanishMode(spanishmode)}/>
                         <span className="slider"></span>
                     </label>
                 </div>
-            </div>
+            </div> */}
         </div>
         <div className="content">
             {navText[navitem]}
